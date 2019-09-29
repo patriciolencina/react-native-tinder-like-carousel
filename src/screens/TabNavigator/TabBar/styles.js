@@ -30,7 +30,7 @@ export default StyleSheet.create({
   },
   textStyle: {
     marginTop: 20,
-    color: 'gray',
+    color: 'black',
     fontSize: 9,
     textAlign: 'center',
   },

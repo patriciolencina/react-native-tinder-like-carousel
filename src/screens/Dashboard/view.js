@@ -1,8 +1,15 @@
 import React from 'react';
-import {SafeAreaView, View, Text, StyleSheet, Image} from 'react-native';
+import {
+  SafeAreaView,
+  View,
+  Text,
+  StyleSheet,
+  Image,
+  Dimensions,
+} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import DraggableView from '../../components/DraggableView';
-
+const heightDevice = Dimensions.get('window').height;
 const DashboardView = ({users, moveRight, moveLeft}) => {
   if (!users) {
     return (
@@ -35,11 +42,11 @@ const DashboardView = ({users, moveRight, moveLeft}) => {
           containerStyle={{
             position: 'absolute',
             alignSelf: 'center',
-            marginHorizontal: 40,
+            marginTop: heightDevice / 3,
           }}
           key={user.username}
           moveLeft={moveLeft}
-          moveRight={moveRight}>
+          moveRight={() => moveRight(user)}>
           <View
             style={{
               borderRadius: 8,
@@ -82,18 +89,26 @@ const DashboardView = ({users, moveRight, moveLeft}) => {
                 }}
               />
             </View>
-            <Text style={{color: '#999999', fontSize: 17, marginTop: 30}}>
-              My address is
-            </Text>
-            <Text
+            <View
               style={{
-                color: 'black',
-                fontSize: 22,
-                textAlign: 'center',
-                marginBottom: 20,
+                flexDirection: 'column',
+                marginHorizontal: 40,
+                justifyContent: 'center',
+                alignItems: 'center',
               }}>
-              {user.address}
-            </Text>
+              <Text style={{color: '#999999', fontSize: 17, marginTop: 30}}>
+                My address is
+              </Text>
+              <Text
+                style={{
+                  color: 'black',
+                  fontSize: 22,
+                  textAlign: 'center',
+                  marginBottom: 20,
+                }}>
+                {user.address}
+              </Text>
+            </View>
             <View
               style={{
                 flexDirection: 'row',

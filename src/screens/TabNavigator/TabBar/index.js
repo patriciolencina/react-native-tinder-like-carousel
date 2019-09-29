@@ -43,15 +43,13 @@ export default class TabBar extends React.Component {
 
           {routes.map((route, index) => {
             return (
-              <View key={index} style={styles.tabBarItem}>
-                <TabBarIcon
-                  key={route.key}
-                  routeName={route.routeName}
-                  onPress={currentRoute => this.navigationHandler(currentRoute)}
-                  focused={navigation.state.index === index}
-                  index={index}
-                />
-              </View>
+              <TabBarIcon
+                key={route.key}
+                routeName={route.routeName}
+                onPress={currentRoute => this.navigationHandler(currentRoute)}
+                focused={navigation.state.index === index}
+                index={index}
+              />
             );
           })}
         </View>

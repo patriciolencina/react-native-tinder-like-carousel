@@ -1,9 +1,10 @@
 import Types from '../types/app';
 import {getUser} from '../../api/index.js';
 
-export const dummyReduxEvent = () => {
+export const addToFavorite = user => {
   return {
-    type: Types.DUMMY_REDUX_EVENT,
+    type: Types.ADD_TO_FAVORITE,
+    user,
   };
 };
 

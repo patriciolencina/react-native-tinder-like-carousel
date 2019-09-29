@@ -33,7 +33,7 @@ export default function Drag({children, moveLeft, moveRight, containerStyle}) {
             Animated.spring(pan.current, {toValue: {x: 500, y: 0}}).start(
               animated => {
                 if (animated.finished) {
-                  moveLeft();
+                  moveRight();
                 }
               },
             );
@@ -41,7 +41,7 @@ export default function Drag({children, moveLeft, moveRight, containerStyle}) {
             Animated.spring(pan.current, {toValue: {x: -500, y: 0}}).start(
               animated => {
                 if (animated.finished) {
-                  moveRight();
+                  moveLeft();
                 }
               },
             );

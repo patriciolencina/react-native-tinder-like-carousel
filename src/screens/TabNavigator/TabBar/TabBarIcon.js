@@ -36,20 +36,7 @@ export default class TabBarIcon extends React.PureComponent {
         break;
 
       case 1:
-        icon = 'ios-aperture';
-        break;
-
-      case 2:
-        icon = 'ios-albums';
-        break;
-      case 3:
-        icon = 'ios-play-circle';
-        break;
-      case 4:
-        icon = 'ios-planet';
-        break;
-      default:
-        icon = 'ios-home';
+        icon = 'ios-heart';
         break;
     }
     const translateXObject = {

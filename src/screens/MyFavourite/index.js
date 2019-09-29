@@ -1,14 +1,11 @@
-import React, {Component} from 'react';
-import {View, Text} from 'react-native';
+import React from 'react';
+import {reverse} from 'ramda';
+import {useSelector} from 'react-redux';
+import {getFavoriteDataPolished} from '../../hooks/user-data-process';
+import MyFavouriteView from './view';
 
-import styles from './styles';
-class MyFavourite extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.title}>MyFavourite</Text>
-      </View>
-    );
-  }
-}
+const MyFavourite = () => {
+  const users = reverse(useSelector(getFavoriteDataPolished));
+  return <MyFavouriteView users={users} />;
+};
 export default MyFavourite;
