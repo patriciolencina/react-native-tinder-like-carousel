@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  View,
-  Text,
-  FlatList,
-  Dimensions,
-  StyleSheet,
-  Image,
-  SafeAreaView,
-} from 'react-native';
+import {View, Text, FlatList, Image, SafeAreaView} from 'react-native';
 
 const MyFavoriteView = ({users}) => {
   return (
@@ -41,8 +33,8 @@ const MyFavoriteView = ({users}) => {
               style={{
                 flexDirection: 'column',
               }}>
-              <Text style={{color: 'black'}}>{item.username}</Text>
-              <Text style={{color: 'black'}}>{item.address}</Text>
+              <Text style={{color: 'black'}}>{item.fullname}</Text>
+              <Text style={{color: 'gray'}}>{item.address}</Text>
             </View>
           </View>
         )}

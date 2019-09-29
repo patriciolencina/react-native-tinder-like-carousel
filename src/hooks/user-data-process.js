@@ -9,6 +9,11 @@ const processUsers = users =>
       values,
       pick(['street', 'city', 'state']),
     )(user.location),
+    fullname: compose(
+      join(' '),
+      values,
+      pick(['title', 'first', 'last']),
+    )(user.name),
   }));
 
 export const getUserDataPolished = createSelector(
