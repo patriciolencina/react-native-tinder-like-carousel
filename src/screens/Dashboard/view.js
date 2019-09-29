@@ -36,7 +36,7 @@ const DashboardView = ({users, moveRight, moveLeft}) => {
           containerStyle={{
             position: 'absolute',
             alignSelf: 'center',
-            marginTop: heightDevice / 3,
+            marginTop: heightDevice / 4,
           }}
           key={user.username}
           moveLeft={moveLeft}
