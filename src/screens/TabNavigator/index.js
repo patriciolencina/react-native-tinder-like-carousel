@@ -1,5 +1,5 @@
 import DashboardScreen from '../Dashboard';
-import SuperPowersScreen from '../SuperPowers';
+import MyFavouriteScreen from '../MyFavourite';
 
 import {createMaterialTopTabNavigator} from 'react-navigation-tabs';
 import TabBar from './TabBar';
@@ -8,8 +8,8 @@ export default createMaterialTopTabNavigator(
     Dashboard: {
       screen: DashboardScreen,
     },
-    SuperPowers: {
-      screen: SuperPowersScreen,
+    MyFavourite: {
+      screen: MyFavouriteScreen,
     },
   },
   {

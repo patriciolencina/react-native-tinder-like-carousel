@@ -1,21 +1,28 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
+import {reverse} from 'ramda';
 import {getUserDataPolished} from '../../hooks/user-data-process';
 import {getUserAttempt} from '../../redux/actions/app';
 import DashboardView from './view';
 
 const Dashboard = () => {
-  const [count, setCount] = useState(0);
-  const user = useSelector(getUserDataPolished);
-
+  const users = reverse(useSelector(getUserDataPolished));
+  const moveLeft = () => {
+    dispatch(getUserAttempt());
+  };
+  const moveRight = () => {
+    dispatch(getUserAttempt());
+  };
   const dispatch = useDispatch();
   useEffect(() => {
-    if (!user) {
+    for (let index = 0; index < 5 - users.length; index++) {
       dispatch(getUserAttempt());
     }
-  }, [dispatch, user]);
+  }, [dispatch, users]);
 
-  return <DashboardView user={user} />;
+  return (
+    <DashboardView users={users} moveLeft={moveLeft} moveRight={moveRight} />
+  );
 };
 
 export default Dashboard;
