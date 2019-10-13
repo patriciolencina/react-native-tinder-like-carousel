@@ -38,6 +38,7 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "eslint": "^6.3.0",
+    "fetch-mock": "^7.5.1",
     "jest": "^24.9.0",
     "jest-environment-enzyme": "^7.1.1",
     "jest-enzyme": "^7.1.1",
@@ -48,8 +49,7 @@
   "jest": {
     "preset": "react-native",
     "setupFilesAfterEnv": [
-      "jest-enzyme",
-      "./node_modules/react-native-gesture-handler/jestSetup.js"
+      "jest-enzyme"
     ],
     "testEnvironment": "enzyme",
     "testEnvironmentOptions": {

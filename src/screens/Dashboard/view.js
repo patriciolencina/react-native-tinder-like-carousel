@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, View, Text, Image, Dimensions} from 'react-native';
+import {SafeAreaView, View, Text, Dimensions} from 'react-native';
 
 import DraggableView from '../../components/DraggableView';
 import UserView from '../../components/UserView';

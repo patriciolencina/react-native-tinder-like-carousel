@@ -8,7 +8,7 @@ exports[`UserView Rendering should match to snapshot 1`] = `
       "alignSelf": "stretch",
       "backgroundColor": "white",
       "borderRadius": 8,
-      "marginHorizontal": 30,
+      "marginHorizontal": 10,
       "paddingTop": 30,
     }
   }

@@ -1,5 +1,5 @@
 import {last} from 'ramda';
-const urlAPI = 'https://randomuser.me/api/0.4/?randomapi';
+export const urlAPI = 'https://randomuser.me/api/0.4/?randomapi';
 
 export async function getUser() {
   try {

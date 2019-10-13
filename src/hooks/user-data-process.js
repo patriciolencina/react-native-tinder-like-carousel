@@ -1,19 +1,19 @@
 import {createSelector} from 'reselect';
 import {join, values, compose, pick} from 'ramda';
 
-const processUsers = users =>
+const processUsers = (users = []) =>
   users.map(user => ({
     ...user,
     address: compose(
       join(' '),
       values,
       pick(['street', 'city', 'state']),
-    )(user.location),
+    )(user.location || {}),
     fullname: compose(
       join(' '),
       values,
       pick(['title', 'first', 'last']),
-    )(user.name),
+    )(user.name || {}),
   }));
 
 export const getUserDataPolished = createSelector(

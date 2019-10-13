@@ -8,7 +8,7 @@ const UserView = ({user = {}}) => {
         borderRadius: 8,
         alignSelf: 'stretch',
         backgroundColor: 'white',
-        marginHorizontal: 30,
+        marginHorizontal: 10,
         alignItems: 'center',
         paddingTop: 30,
       }}>
