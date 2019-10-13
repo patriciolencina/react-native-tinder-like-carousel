@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DraggableView Rendering should match to snapshot 1`] = `
+exports[`DraggableView rendering should match to snapshot 1`] = `
 <AnimatedComponent
   onMoveShouldSetResponder={[Function]}
   onMoveShouldSetResponderCapture={[Function]}

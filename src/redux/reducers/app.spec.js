@@ -1,7 +1,7 @@
 import {last} from 'ramda';
 import types from '../types/app';
 import appReducer from './app';
-import {userData} from '../../../utils';
+import {userData} from '../../../mockData';
 describe('users Reducer', () => {
   it('Should return default state', () => {
     const newState = appReducer(undefined, {});

@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyFavourite rendering should render with Flatlist with user data 1`] = `
+<SafeAreaView
+  style={
+    Object {
+      "backgroundColor": "white",
+      "flex": 1,
+    }
+  }
+>
+  <FlatList
+    data={
+      Array [
+        Object {
+          "SSN": "707-51-3358",
+          "cell": "(899)-446-4844",
+          "dob": "144374909",
+          "email": "reginald.burton77@example.com",
+          "gender": "male",
+          "location": Object {
+            "city": "duncanville",
+            "state": "iowa",
+            "street": "5668 andreas ave",
+            "zip": "69310",
+          },
+          "md5": "59f4e2db81840e41eaa1b2d39f2ead55",
+          "name": Object {
+            "first": "reginald",
+            "last": "burton",
+            "title": "mr",
+          },
+          "password": "calgary",
+          "phone": "(712)-125-8909",
+          "picture": "http://api.randomuser.me/portraits/men/61.jpg",
+          "registered": "1246053519",
+          "salt": "o50omLUi",
+          "sha1": "f1d65fd8f818137c5bc3f4bc147bb8ea109d5867",
+          "sha256": "b5a525ca0e449c81029829d7b7eca752fce49b696c58363b9e36cfd272f18e5f",
+          "username": "beautifultiger643",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReachedThreshold={2}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  />
+</SafeAreaView>
+`;

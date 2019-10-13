@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DashboardView rendering should match to snapshot 1`] = `
+<SafeAreaView>
+  <Text>
+    Loading...
+  </Text>
+</SafeAreaView>
+`;
