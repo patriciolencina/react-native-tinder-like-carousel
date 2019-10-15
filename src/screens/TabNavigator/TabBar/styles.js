@@ -2,7 +2,7 @@ import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
   containerSafe: {
     height: 44,
-    backgroundColor: 'red',
+    backgroundColor: 'lightgray',
   },
   container: {
     flexDirection: 'row',
@@ -10,7 +10,7 @@ export default StyleSheet.create({
     height: 44,
     width: '100%',
     paddingHorizontal: 0,
-    backgroundColor: 'red',
+    backgroundColor: 'lightgray',
   },
   tabBarItem: {
     flex: 1,

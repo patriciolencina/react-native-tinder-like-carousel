@@ -1,7 +1,7 @@
 import React, {useRef} from 'react';
 import {SafeAreaView, View, Animated, Easing, Dimensions} from 'react-native';
 import {path} from 'ramda';
-import TabBarIcon from '../TabBarIcon';
+import TabBarIcon from '../../../components/TabBarIcon';
 import styles from './styles';
 const screenWidth = Math.round(Dimensions.get('window').width);
 const backgroundViewWidth = screenWidth / 2;
@@ -9,7 +9,7 @@ const backgroundViewWidth = screenWidth / 2;
 const TabBar = ({navigation = {}}) => {
   const animatedValue = useRef(new Animated.Value(0)).current;
 
-  const routes = path(['state', 'routes'], navigation);
+  const routes = path(['state', 'routes'], navigation) || [];
   const navigationIndex = path(['state', 'index'], navigation);
 
   Animated.timing(animatedValue, {

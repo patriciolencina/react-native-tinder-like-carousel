@@ -1,7 +1,7 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useRef} from 'react';
 import {TouchableWithoutFeedback, View, Animated, Easing} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import styles from './TabBar/styles';
+import styles from '../screens/TabNavigator/TabBar/styles';
 
 const TabBarIcon = ({focused, onPress, index, routeName}) => {
   const animatedValue = useRef(new Animated.Value(0)).current;

@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabBarIcon rendering should render 1`] = `
+<TouchableWithoutFeedback
+  onPress={[Function]}
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+        },
+      ]
+    }
+  >
+    <AnimatedComponent
+      style={
+        Array [
+          undefined,
+          Object {
+            "transform": Array [
+              Object {
+                "translateY": 0,
+              },
+              Object {
+                "translateX": 0,
+              },
+            ],
+          },
+        ]
+      }
+    >
+      <Icon
+        allowFontScaling={false}
+        color="black"
+        name="ios-home"
+        size={34}
+      />
+    </AnimatedComponent>
+    <AnimatedComponent
+      style={
+        Array [
+          Object {
+            "color": "black",
+            "fontSize": 9,
+            "marginTop": 20,
+            "textAlign": "center",
+          },
+          Object {
+            "transform": Array [
+              Object {
+                "translateY": 0,
+              },
+              Object {
+                "translateX": 0,
+              },
+            ],
+          },
+        ]
+      }
+    />
+  </View>
+</TouchableWithoutFeedback>
+`;

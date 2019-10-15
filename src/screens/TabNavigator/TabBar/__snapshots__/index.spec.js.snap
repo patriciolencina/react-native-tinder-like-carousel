@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabBar rendering should render 1`] = `
+<SafeAreaView
+  style={
+    Object {
+      "backgroundColor": "lightgray",
+      "height": 44,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignContent": "center",
+        "backgroundColor": "lightgray",
+        "flexDirection": "row",
+        "height": 44,
+        "paddingHorizontal": 0,
+        "width": "100%",
+      }
+    }
+  >
+    <AnimatedComponent
+      style={
+        Array [
+          Object {
+            "backgroundColor": "gray",
+            "flex": 1,
+            "height": "100%",
+            "position": "absolute",
+            "width": 80,
+          },
+          Object {
+            "width": 375,
+          },
+          Object {
+            "transform": Array [
+              Object {
+                "translateX": 0,
+              },
+            ],
+          },
+        ]
+      }
+    />
+  </View>
+</SafeAreaView>
+`;
