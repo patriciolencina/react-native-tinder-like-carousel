@@ -15,7 +15,7 @@ describe('test getUserAttempt action', () => {
     fetchMock.restore();
   });
 
-  it('creates FETCH_TODOS_SUCCESS when fetching users has been done', () => {
+  it('creates GET_USER_SUCCESS when fetching users has been done', () => {
     fetchMock.mock(urlAPI, userJSONString);
     const expectedActions = [{type: Types.GET_USER_SUCCESS, user: userData}];
     const store = mockStore({users: []});
